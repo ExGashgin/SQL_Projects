@@ -1,32 +1,19 @@
-****Overview****
-This project focuses on data cleaning and exploratory analysis of a layoffs dataset using MySQL. The dataset includes company layoff records, and the project ensures data integrity before conducting trend analysis.
+***Overview***
+This repository contains various SQL-based projects showcasing data cleaning, exploration, analysis, and optimization techniques. The projects involve querying structured datasets, applying transformations, and generating insights.
 
-****Dataset****
-The dataset contains:
-- Company name
-- Location
-- Industry
-- Total laid-off employees
-- Percentage laid off
-- Date of layoffs
-- Stage of the company
-- Country
-- Funds raised
+***Projects Included***
+Each project demonstrates SQL concepts through practical examples, including:
+- Data cleaning (handling duplicates, missing values, standardizing formats)
+- Exploratory analysis (identifying trends, aggregations, and key statistics)
+- Data transformations (joins, subqueries, window functions)
+- Optimized query structuring (indexing, query tuning)
 
-****Data Cleaning****
-To enhance data quality, the following steps were performed:
-- Removing duplicates using ROW_NUMBER().
-- Standardizing formats, such as trimming spaces, unifying industry names, and correctly formatting dates.
-- Handling missing values, replacing null values where possible, and filtering out incomplete records.
-- Dropping unnecessary columns to improve database structure.
+Each project folder contains:
+- Raw dataset (if applicable)
+- SQL scripts (for data processing)
+- Brief documentation explaining objectives and findings
 
-****Exploratory Analysis****
-Once cleaned, several SQL queries were used to explore key layoff trends:
-- Highest layoffs (total and percentage-based).
-- Layoffs by industry, company, and location.
-- Yearly trends and rolling totals using window functions.
-- Monthly layoffs analysis for seasonality insights.
-- Top impacted companies and industries per year using DENSE_RANK().
-
-****Usage****
-Clone this repository and run the SQL scripts in MySQL to replicate the analysis.
+***Technologies Used***
+- MySQL
+- PostgreSQL
+- SQL Server
