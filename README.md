@@ -1,1 +1,32 @@
-# SQL_Projects
+****Overview****
+This project focuses on data cleaning and exploratory analysis of a layoffs dataset using MySQL. The dataset includes company layoff records, and the project ensures data integrity before conducting trend analysis.
+
+****Dataset****
+The dataset contains:
+- Company name
+- Location
+- Industry
+- Total laid-off employees
+- Percentage laid off
+- Date of layoffs
+- Stage of the company
+- Country
+- Funds raised
+
+****Data Cleaning****
+To enhance data quality, the following steps were performed:
+- Removing duplicates using ROW_NUMBER().
+- Standardizing formats, such as trimming spaces, unifying industry names, and correctly formatting dates.
+- Handling missing values, replacing null values where possible, and filtering out incomplete records.
+- Dropping unnecessary columns to improve database structure.
+
+****Exploratory Analysis****
+Once cleaned, several SQL queries were used to explore key layoff trends:
+- Highest layoffs (total and percentage-based).
+- Layoffs by industry, company, and location.
+- Yearly trends and rolling totals using window functions.
+- Monthly layoffs analysis for seasonality insights.
+- Top impacted companies and industries per year using DENSE_RANK().
+
+****Usage****
+Clone this repository and run the SQL scripts in MySQL to replicate the analysis.
